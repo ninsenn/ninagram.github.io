@@ -1,0 +1,28 @@
+
+.container {
+    background-color: blue;
+    margin: 10px 40px;
+}
+
+.page-title {
+    background-color: orange;
+}
+
+.lede {
+    background-color: beige;
+}
+
+
+.stack { 
+    background-color: yellow;
+}
+
+
+.cta { 
+    background:#1c6e9e; 
+    color:#fff; 
+    padding:10px 16px; 
+    border-radius:12px; /* rounding edges */
+    text-decoration: none; 
+
+}
