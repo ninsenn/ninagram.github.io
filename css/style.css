@@ -1,11 +1,8 @@
 
-/* ====== Global Styles ====== */
 body {
-        margin: 0;
+        margin: 0; 
         font-family: "Raleway", sans-serif;
         font-style: normal;
-        font-optical-sizing: auto;
-        font-weight: 250;
         background-color: #c5ced8;
         min-height:100vh; /* for footer to stay in bottom of page */
         display: flex; /* for footer to stay in bottom of page */
@@ -18,27 +15,23 @@ body {
         align-items: center;
         padding: 30px 30px;
         background-color: #e5cab0;
-        flex-wrap: wrap;
         gap: 80px;
     }
 
-    /* ====== Logo ====== */
     .logo {
         font-family: "Meow Script", cursive;
-        font-weight: 400;
         font-style: normal;
-        font-size: 2rem;
-        color: #1c6e9e; /* teal-blue */
+        font-size: 30px;
+        color: #1c6e9e; 
         text-decoration: none; 
     }
 
-    /* ====== Nav Links ====== */
     nav {
         display: flex;
         gap: 45px;
         align-items: center;
-        justify-content: center; /* Add this */
-        flex-wrap: wrap; /* Add this */
+        justify-content: center; 
+        flex-wrap: wrap; 
     }
 
     nav a {
@@ -51,7 +44,6 @@ body {
         color: #13597f;
     }
 
-    /* ====== Contact Button ====== */
     .contact-btn {
         background-color: #d3a677;
         color: #1c6e9e;
@@ -65,23 +57,9 @@ body {
     }
 
     main {
-        padding: 60px;
-        text-align: center;
-        color:#0e4868;
         flex: 1 /* makes main take up rest of the space */
     }
 
-    main h1 {
-        font-size: 2.2rem;
-    }
-
-    main p {
-        max-width: 700px;
-        margin: 20px auto;
-        line-height: 1.6;
-    }
-
-    /* ====== Responsive ====== */
     @media (max-width: 768px) {
     header {
         flex-direction: column;
