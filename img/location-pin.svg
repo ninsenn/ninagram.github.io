@@ -1,0 +1,10 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="20" cy="20" r="18" fill="#f5e4d9"></circle>
+  
+  <!-- Pin shape -->
+  <path d="M20 8C16.7 8 14 10.7 14 14C14 20 20 26 20 26C20 26 26 20 26 14C26 10.7 23.3 8 20 8Z" fill="none" stroke="#b9a594" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  
+  <!-- Inner circle -->
+  <circle cx="20" cy="14" r="3" fill="none" stroke="#b9a594" stroke-width="2"></circle>
+</svg>

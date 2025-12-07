@@ -1,0 +1,45 @@
+
+.header {
+    padding: 2rem;
+}
+
+.content_block_left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #f3efef; 
+;
+}
+
+.content_block_right {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+img {
+    width: 350px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+div {
+    padding: 10px; 
+}
+
+main {
+    padding: 20px 10rem;
+}
+
+.button {
+    background:#8a5e3f; 
+    color:#fff; 
+    padding:10px 16px; 
+    border-radius:12px; 
+    text-decoration: none; 
+}
+
+p {
+    padding-bottom: 20px;
+}
+

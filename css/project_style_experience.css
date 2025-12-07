@@ -1,55 +1,61 @@
-
-.card1 {
-    background-color: #7390b0;
+.card {
+    background-color: #b08d73;
     color:antiquewhite;
     text-align: left;
-    margin: 40px 170px;
     padding: 30px;
     border-radius:10px; /* rounding edges */
-}
-
-.card2 {
-    background-color: #7390b0;
-    color:antiquewhite;
-    text-align: left;
-    margin: 40px 170px;
-    padding: 30px;
-    border-radius:10px; 
-}
-
-.card3 {
-    background-color: #7390b0;
-    color:antiquewhite;
-    text-align: left;
-    margin: 40px 170px;
-    padding: 30px;
-    border-radius:10px; 
-}
-
-.card4 {
-    background-color: #7390b0;
-    color:antiquewhite;
-    text-align: left;
-    margin: 40px 170px;
-    padding: 30px;
-    border-radius:10px; 
+    width: 100%;
+    margin-bottom: 2rem;
 }
 
 .container {
-    margin: 10px 170px; 
-    padding: 30px;
-    text-align: left;
-}
-
-.page-title {
-    text-align: left;
-    margin: 10px 170px;
+    max-width: 1400px;   /* limit on huge screens */
+    margin: 20px 13rem;
 }
 
 .cta { 
-    background:#1c6e9e; 
+    background:#8c6c54;; 
     color:#fff; 
     padding:10px 16px; 
     border-radius:12px; 
     text-decoration: none; 
+}
+
+
+/* Hide the checkbox */
+.toggle-check {
+    display: none;
+}
+
+/* Only show when read more is clicked */
+.extra-content {
+    display: none;
+}
+
+/* Show extra content when checked */
+.toggle-check:checked ~ .extra-content {
+    display: block;
+}
+
+/* Hide Read less button by default */
+.read-less-btn {
+    display: none;
+}
+
+/* Show Read less when checked */
+.toggle-check:checked ~ .extra-content .read-less-btn {
+    display: inline-block;
+}
+
+/* Hide Read more when checked */
+.toggle-check:checked ~ .read-more-btn {
+    display: none;
+}
+
+/* Make sure labels behave like buttons */
+.read-more-btn,
+.read-less-btn {
+    margin-top: 1rem;
+    cursor: pointer;
+    display: inline-block; 
 }

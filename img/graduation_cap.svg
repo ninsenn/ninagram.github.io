@@ -1,0 +1,16 @@
+<svg width="80" height="80" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Mortarboard (cap top) -->
+  <path d="M32 10L10 20.5L32 31L54 20.5L32 10Z" fill="#5A1F29"></path>
+
+  <!-- Cap front panel -->
+  <path d="M32 31L18 24.5V34C18 37.5 24 41 32 41C40 41 46 37.5 46 34V24.5L32 31Z" fill="#4A1821"></path>
+
+  <!-- Tassel string (left side) -->
+  <path d="M18 24.5V38" stroke="#E38A20" stroke-width="2.5" stroke-linecap="round"></path>
+
+  <!-- Tassel knot -->
+  <circle cx="18" cy="38" r="2.6" fill="#E38A20"></circle>
+
+  <!-- Tassel tail -->
+  <path d="M18 40.5V50" stroke="#E38A20" stroke-width="2.5" stroke-linecap="round"></path>
+</svg>

@@ -1,0 +1,44 @@
+<svg width="260" height="200" viewBox="0 0 260 200" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Top Board -->
+  <path d="M130 20L10 70L130 120L250 70L130 20Z" fill="#3B1E14"></path>
+
+  <!-- Top Board Highlight -->
+  <path d="M130 20L10 70L130 110L250 70L130 20Z" fill="#4A2619"></path>
+
+  <!-- Cap Body -->
+  <path d="M80 95V150C80 165 105 180 130 180C155 180 180 165 180 150V95L130 120L80 95Z" fill="#3B1E14"></path>
+
+  <!-- Body Shading -->
+  <path d="M130 120L80 95V150C80 165 105 180 130 180V120Z" fill="#2D160F" opacity="0.4"></path>
+
+  <!-- Orange Brim -->
+  <path d="M80 145C80 160 105 175 130 175C155 175 180 160 180 145V140C180 155 155 170 130 170C105 170 80 155 80 140V145Z" fill="#E6A242"></path>
+
+  <!-- Tassel Cord -->
+  <path d="M130 20L65 78" stroke="#E6A242" stroke-width="6" stroke-linecap="round"></path>
+
+  <!-- Tassel Knot -->
+  <circle cx="65" cy="78" r="7" fill="#E6A242"></circle>
+
+  <!-- Realistic Tassel Top -->
+  <ellipse cx="65" cy="90" rx="7" ry="4" fill="#D59034"></ellipse>
+
+  <!-- Realistic Tassel Strands -->
+  <path d="M65 90
+           C60 100, 62 120, 64 140
+           C65 144, 63 150, 66 165" stroke="#E6A242" stroke-width="4" stroke-linecap="round"></path>
+
+  <path d="M65 90
+           C68 100, 67 125, 66 145
+           C65 150, 67 158, 64 168" stroke="#CC7D28" stroke-width="4" stroke-linecap="round"></path>
+
+  <path d="M65 90
+           C62 102, 64 130, 63 148
+           C63 152, 61 160, 65 170" stroke="#F0B355" stroke-width="3" stroke-linecap="round"></path>
+
+  <!-- Tassel End Shadow -->
+  <circle cx="65" cy="170" r="4" fill="#E6A242"></circle>
+  <circle cx="65" cy="170" r="2" fill="#C57A24"></circle>
+
+</svg>

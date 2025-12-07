@@ -1,49 +1,16 @@
 
-.card1 {
-    background-color: #7390b0;
+.card {
+    background-color: #b08d73;
     color:antiquewhite;
     text-align: left;
-    margin: 40px 170px;
     padding: 30px;
     border-radius:10px; /* rounding edges */
-}
-
-.card2 {
-    background-color: #7390b0;
-    color:antiquewhite;
-    text-align: left;
-    margin: 40px 170px;
-    padding: 30px;
-    border-radius:10px; 
-}
-
-.card3 {
-    background-color: #7390b0;
-    color:antiquewhite;
-    text-align: left;
-    margin: 40px 170px;
-    padding: 30px;
-    border-radius:10px; 
-}
-
-.card4 {
-    background-color: #7390b0;
-    color:antiquewhite;
-    text-align: left;
-    margin: 40px 170px;
-    padding: 30px;
-    border-radius:10px; 
+    width: 100%;
 }
 
 .container {
-    margin: 10px 170px; 
-    padding: 30px;
-    text-align: left;
-}
-
-.page-title {
-    text-align: left;
-    margin: 10px 170px;
+    max-width: 1400px;   /* limit on huge screens */
+    margin: 20px 10rem;
 }
 
 .cta { 
@@ -52,4 +19,101 @@
     padding:10px 16px; 
     border-radius:12px; 
     text-decoration: none; 
+}
+
+
+.timeline-item {
+    display: flex;
+    align-items: stretch;   /* makes left column match card height */
+    gap: 20px;
+    margin-bottom: 2rem;
+}
+
+/* Left side column */
+.timeline-left {
+    position: relative;
+    width: 80px;         /* same width for all icons/years */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* centers icon+year vertically */
+}
+
+/* Icon */
+.timeline-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+/* Year */
+.timeline-year {
+    font-weight: bold;
+    padding: 2px;
+}
+
+
+.line-top {
+    position: absolute;
+    top: 0;
+    bottom: calc(50% + 40px); /* half + icon radius */
+    width: 2px;
+    background: #cb5308d0;
+}
+
+
+.line-bottom {
+    position: absolute;
+    top: calc(50% + 48px); /* half + icon radius */
+    bottom: 0;
+    width: 2px;
+    background: #cb5308d0;
+}
+
+
+@media (max-width: 768px) {
+
+    /* Stack icon/year ABOVE the card */
+    .timeline-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Left column expands full width */
+    .timeline-left {
+        width: 100%;
+        justify-content: flex-start; 
+        margin-bottom: 1rem;
+    }
+
+    /* Remove timeline vertical lines on mobile */
+    .line-top,
+    .line-bottom {
+        display: none;
+    }
+
+    /* Adjust card spacing */
+    .card {
+        padding: 20px;
+    }
+
+    /* Container spacing on small screens */
+    .container {
+        padding: 0 1rem;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .timeline-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .card {
+        padding: 15px;
+        font-size: 0.95rem;
+    }
 }
