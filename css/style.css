@@ -2,8 +2,9 @@
 body {
     margin: 0; 
     font-family: "Raleway", sans-serif;
-    background-color: #eae5e4; 
-    color:#562d09;
+    background-color: #f5f2f2; 
+    color:#452407;
+    line-height: 1.5; /* adds paragraph spacing */
     min-height:100vh; /* for footer to stay in bottom of page */
     display: flex; /* for footer to stay in bottom of page */
     flex-direction: column; /* for footer to stay in bottom of page */
@@ -13,51 +14,57 @@ header {
     display: flex;
     justify-content: center;
     padding: 30px;
-    background-color: #C9BCAB;
+    background-color: #cebaac; /* cbb19e */
     gap: 80px;
 }   
 
 .logo {
     font-family: "Meow Script", cursive;
     font-size: 30px;
-    color: #562d09; 
+    color: #452407; 
     text-decoration: none; 
 }
 
 nav {
     display: flex;
-    gap: 45px;
+    gap: 35px;
     align-items: center;
     flex-wrap: wrap; 
 }
 
 nav a {
     text-decoration: none;
-    color: #562d09;
+    color: #452407;
     font-weight: bold;
+    padding: 10px;
+    border-radius: 12px;
+    transition: background-color 0.25s ease, color 0.25s ease; /* Smoothly animate background and text color changes */
 }
 
 nav a:hover {
+    background-color: #F4D9DF; 
     color: #562d09;
 }
 
 .contact-btn {
-    background-color: #8a5e3f;
-    color: #edd4be;
+    background-color: #F4D9DF; 
+    border: 2px solid #efb4c1;
+    color: #452407;
     font-weight: bold;
     padding: 10px 25px;
     border-radius: 12px;
 }
 
 .contact-btn:hover {
-    background-color: #a28062;
+    background-color: #efb4c1;
+    color: #452407;
 }
 
 
 footer {
     text-align: center; 
     padding: 22px;
-    background-color: #b9a594;
+    background-color: #cebaac;
 }
 
 
@@ -75,27 +82,87 @@ footer {
     gap: 20px;
 }
 
-/* Tablet breakpoint (optional) */
-@media (max-width: 900px) {
-    .grid-3 {
-        grid-template-columns: 1fr 1fr;
-    }
+
+.menu-toggle {
+    display: none; 
+    /* Hide the checkbox used to control the mobile menu */
 }
 
-/* Mobile: collapse ALL grids to 1 column */
-@media (max-width: 700px) {
-    .grid-2,
-    .grid-3 {
-        grid-template-columns: 1fr;
+.burger {
+    width: 30px;
+    height: 20px;
+    /* Hidden on desktop, shown only on mobile */
+    display: none; 
+    flex-direction: column; /* Stack the burger lines vertically */
+    justify-content: space-between; 
+    /* Make the icon clickable */
+    cursor: pointer; 
+}
+
+.burger span {
+    height: 2px; 
+    background-color: #452407; 
+    border-radius: 2px; 
+    /* Make each line behave like a box */
+    display: block; 
+}
+
+
+/* Desktop: always hide X */
+.close-x {
+    display: none;
+}
+
+@media (max-width: 800px) {
+
+    header {
+        justify-content: space-between;
+        align-items: center;   /* centers burger vertically */
+        padding: 25px;
+        position: relative; /* required for X positioning */
     }
 
     nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #cebaac;
+        padding: 20px 0;
         gap: 20px;
-        justify-content: center;
     }
 
-    header {
-        flex-direction: column;
-        gap: 20px;
+    /* Show burger on mobile */
+    .burger {
+        display: flex;
+        position: relative;
+        z-index: 1000;
     }
+
+    /* When checkbox is checked → show the menu */
+    .menu-toggle:checked ~ nav {
+        display: flex;
+    }
+
+    /* X icon default hidden */
+    .close-x {
+        display: none;
+        font-size: 30px;
+        font-weight: bold;
+        color: #452407;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    /* When menu is open: hide burger, show X */
+    .menu-toggle:checked ~ .burger {
+        display: none;
+    }
+
+    .menu-toggle:checked ~ .close-x {
+        display: block;
+    }
+
 }
+

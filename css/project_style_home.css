@@ -1,11 +1,11 @@
 .section {
-    margin: 10px 170px;
-    padding: 20px;
+    margin: 10px 170px; /* The spacing around the edges */
+    padding: 20px; 
 }
 
 .header {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row-reverse; /* controls image to the right */ 
     align-items: center;
     gap: 30px; /* spacing between image and text */
 }
@@ -19,6 +19,12 @@
 
 main h1 {
     font-size: 2.2rem;
+}
+
+h2 {
+    border-bottom: 2px solid #FF5C00; 
+    padding-bottom: 0.3em;            /* space between text and line */
+    display: inline-block;            /* underline fits text width */
 }
 
 .contact_section {
@@ -42,7 +48,8 @@ main h1 {
     display: flex;   /* horizontal layout: icon + text */
     align-items: center;
     gap: 20px;
-    background-color: #b9a594;
+    background-color: #d2baa979;
+    border: 2px solid #cebaac;
     padding: 15px; 
     border-radius: 20px; /* rounding edges */
     max-width: 320px;
@@ -51,6 +58,8 @@ main h1 {
 
 .contact_icon img {
     width: 60px;
+    border: 2px solid #efb4c1;
+    border-radius: 60px;
 }
 
 

@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Title displayed in the tab -->
         <title>Nina Gram | Skills</title>
+        <!-- The CSS style sheets for the page - one -->
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/skills.css">
         <!-- Google font for body text -->
@@ -18,8 +20,23 @@
 
     <body>
         <header>
+            <!-- Logo link -->
             <a href="project_home.html" class="logo">Nina Gram</a>
             
+            <!-- Hidden checkbox controls menu -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+            <!-- Burger icon -->
+            <label for="menu-toggle" class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- The x for closing burger menu -->
+            <label for="menu-toggle" class="close-x">✕</label>
+
+            <!-- Main navigation links -->
             <nav>
                 <a href="project_home.html">Home</a>
                 <a href="project_education.html">Education</a>
@@ -31,15 +48,17 @@
         </header>
 
         <main>
+            <!-- container for the header and description -->
             <div class="header">
                 <h1>Skills</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing eli, sed do eiusmod tempor incididunt ut labore et dolor.</p>
             </div>
 
+            <!-- container for the skills icons -->
             <section class="skills">
-            <div class="skill-card">
+            <div class="skill-card"> <!-- div for each card to style them individually -->
                 <div class="skill-icon">
-                    <img src="img/purple.svg" alt="">
+                    <img src="img/purple.svg" alt="Lorem ipsum purple icon">
                 </div>
                 <h3>UI/UX</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing eli, sed do eiusmod tempor incididunt ut labore et dolor.</p>
@@ -47,26 +66,26 @@
 
             <div class="skill-card">
                 <div class="skill-icon">
-                    <img src="img/blue.svg" alt="">
+                    <img src="img/blue.svg" alt="Lorem ipsum blue icon">
                 </div>
                 <h3>Web Design</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing eli, sed do eiusmod tempor incididunt ut labore et dolor.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur eli, sed do tempor incididunt ut labore et dolor.</p>
             </div>
 
             <div class="skill-card">
                 <div class="skill-icon">
-                    <img src="img/orange.svg" alt="">
+                    <img src="img/orange.svg" alt="Lorem ipsum orange icon">
                 </div>
                 <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing eli, sed do eiusmod tempor incididunt ut labore et dolor.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing eli, eiusmod tempor incididunt ut labore et dolor.</p>
             </div>
 
             <div class="skill-card">
                 <div class="skill-icon">
-                    <img src="img/green.svg" alt="">
+                    <img src="img/green.svg" alt="Lorem ipsum green icon">
                 </div>
                 <h3>Python</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing eli, sed do eiusmod tempor incididunt ut labore et dolor.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing eli, sed do eiusmod tempor incididunt ut labore et dolor eismod hjulset adipiscing eli.</p>
             </div>
 
         </section>

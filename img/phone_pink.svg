@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 100 100">
+  <!-- Pink Circle -->
+  <circle cx="50" cy="50" r="48" fill="#F4D9DF"></circle>
+
+  <!-- Phone Handset -->
+  <path d="M60 63c-1 1-3 2-4 3c-1 1-3 1-4 0c-3-2-6-5-9-9c-3-3-6-6-9-9c-1-1-1-3 0-4
+       c1-1 2-3 3-4c1-1 1-3 0-4l-5-5c-1-1-3-1-4 0c-2 2-5 6-5 10c0 6 5 14 12 21s15 12 21 12
+       c4 0 8-3 10-5c1-1 1-3 0-4l-5-5c-1-1-3-1-4 0z" fill="none" stroke="#562D09" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>

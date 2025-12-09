@@ -18,8 +18,23 @@
 
     <body>
         <header>
+            <!-- Logo link -->
             <a href="project_home.html" class="logo">Nina Gram</a>
             
+            <!-- Hidden checkbox controls menu -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+            <!-- Burger icon -->
+            <label for="menu-toggle" class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- The x for closing burger menu -->
+            <label for="menu-toggle" class="close-x">✕</label>
+
+            <!-- Main navigation links -->
             <nav>
                 <a href="project_home.html">Home</a>
                 <a href="project_education.html">Education</a>
@@ -31,55 +46,59 @@
         </header>
 
         <main class="container">
+            <div class="header">
             <h1 class="page-title">Experience</h1>
                 <p>The following will show an overview of my work experience.</p>
+            </div>
 
-                <div class="card">
-                    <h3>Bilka - Service employee</h3>
-                    <p>This is the primary text.</p>
+            <!-- Container for card information-->
+            <div class="card">
+                <h3>Bilka - Service employee</h3>
+                <p>This is the primary text.</p>
 
-                    <!--Hidden checkbox-->
-                    <input type="checkbox" id="toggle_1" class="toggle-check">
+                <!--Hidden checkbox to use for read more - read less-->
+                <input type="checkbox" id="toggle_1" class="toggle-check">
 
-                    <!--Read more-->
-                    <label for="toggle_1" class="cta read-more-btn">Read more</label>
+                <!--first toggle says "Read more" -->
+                <label for="toggle_1" class="cta read-more-btn">Read more</label>
 
-                    <div class="extra-content">
-                        <p>
-                            This is the extra text. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
-                        </p>
-                        <label for="toggle_1" class="cta read-less-btn">Read less</label>
-                    </div>
+                <!-- This shows the extra text when toggle is switched -->
+                <div class="extra-content">
+                    <p>
+                        This is the extra text. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
+                    </p>
+                    <!-- Show read less and collapses when pressed (see css)-->
+                    <label for="toggle_1" class="cta read-less-btn">Read less</label>
                 </div>
+            </div>
             
-                <div class="card">
-                    <h3>Falck - student assistant</h3>
-                    <p>This is the primary text.</p>
+            <div class="card">
+                <h3>Falck - student assistant</h3>
+                <p>This is the primary text.</p>
 
-                    <input type="checkbox" id="toggle_2" class="toggle-check">
-                    <label for="toggle_2" class="cta read-more-btn">Read more</label>
+                <input type="checkbox" id="toggle_2" class="toggle-check">
+                <label for="toggle_2" class="cta read-more-btn">Read more</label>
 
-                    <div class="extra-content">
-                        <p>
-                            This is the extra text. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
-                        </p>
-                        <label for="toggle_2" class="cta read-less-btn">Read less</label>
-                    </div>
+                <div class="extra-content">
+                    <p>
+                        This is the extra text. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
+                    </p>
+                    <label for="toggle_2" class="cta read-less-btn">Read less</label>
                 </div>
+            </div>
 
-                <div class="card">
-                    <h3>DFDS - Digital intern and student assistant</h3>
-                    <p>This is the primary text.</p>
-                    
-                    <input type="checkbox" id="toggle_3" class="toggle-check">
-                    <label for="toggle_3" class="cta read-more-btn">Read more</label>
+            <div class="card">
+                <h3>DFDS - Digital intern and student assistant</h3>
+                <p>This is the primary text.</p>
+                
+                <input type="checkbox" id="toggle_3" class="toggle-check">
+                <label for="toggle_3" class="cta read-more-btn">Read more</label>
 
-                    <div class="extra-content">
-                        <p>
-                            This is the extra text. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
-                        </p>
-                        <label for="toggle_3" class="cta read-less-btn">Read less</label>
-                    </div>
+                <div class="extra-content">
+                    <p>
+                        This is the extra text. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
+                    </p>
+                    <label for="toggle_3" class="cta read-less-btn">Read less</label>
                 </div>
             </div>
         </main>

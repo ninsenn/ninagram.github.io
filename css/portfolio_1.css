@@ -1,11 +1,11 @@
 
 .main_container {
-    padding: 60px 15rem;
+    padding: 40px 15rem;
 }
 
 p {
     text-align: left;
-    padding-top: 10px;
+    padding: 10px 0px 25px 0px; /* top, right, bottom, left */
 }
 
 
@@ -14,14 +14,24 @@ p {
     height: 500px;         /* height of the preview box */
     overflow: hidden;      /* hide outer scrollbars */
     margin: 2rem auto;
-    border-radius: 12px;   /* optional */
+    border-radius: 12px;   
     box-shadow: 0 6px 20px rgba(0,0,0,0.1); /* optional soft shadow */
 }
 
 .pdf-frame {
     width: 100%;
     height: 100%;
-    border: none;
+    border: none; /* removes default border */
+}
+
+.button {
+    background-color: #F4D9DF; 
+    border: 2px solid #efb4c1;
+    color: #452407;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 12px;
+    text-decoration: none;
 }
 
 

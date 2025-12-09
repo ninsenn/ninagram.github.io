@@ -18,8 +18,23 @@
 
     <body>
         <header>
+            <!-- Logo link -->
             <a href="project_home.html" class="logo">Nina Gram</a>
             
+            <!-- Hidden checkbox controls menu -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+            <!-- Burger icon -->
+            <label for="menu-toggle" class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- The x for closing burger menu -->
+            <label for="menu-toggle" class="close-x">✕</label>
+
+            <!-- Main navigation links -->
             <nav>
                 <a href="project_home.html">Home</a>
                 <a href="project_education.html">Education</a>
@@ -31,11 +46,15 @@
         </header>
 
         <main class="container">
+            <!--Header section-->
+            <div class="header">
             <h1 class="page-title">Education</h1>
                 <p>
                     The following will show an overview of my academic journey.
                 </p>
+            </div>
             
+            <!--Main timeline above and below the icon-->
             <div class="timeline-item">
                     <div class="timeline-left">
                         <span class="line-top"></span>
@@ -43,7 +62,8 @@
                         <span class="timeline-year">2018</span>
                         <span class="line-bottom"></span>
                     </div>
-            
+                
+                <!--The card to hold information-->
                 <div class="card">
                     <h3> Allerød Gymnasium </h3>
                     <p> 

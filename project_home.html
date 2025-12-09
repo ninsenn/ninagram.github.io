@@ -3,8 +3,10 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Title displayed in the tab -->
         <title>Nina Gram | Home</title>
         <link rel="stylesheet" href="css/style.css" />
+        <!-- The CSS style sheets for the page - one -->
         <link rel="stylesheet" href="css/project_style_home.css" />
         <!-- Google font for body text -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,8 +20,23 @@
 
     <body>
         <header>
+            <!-- Logo link -->
             <a href="project_home.html" class="logo">Nina Gram</a>
             
+            <!-- Hidden checkbox controls menu -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+            <!-- Burger icon -->
+            <label for="menu-toggle" class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- The x for closing burger menu -->
+            <label for="menu-toggle" class="close-x">✕</label>
+
+            <!-- Main navigation links -->
             <nav>
                 <a href="project_home.html">Home</a>
                 <a href="project_education.html">Education</a>
@@ -30,7 +47,9 @@
             </nav>
         </header>
 
+
         <main class="main_container">
+            <!-- container for the header and description -->
             <div class="header section">
                 <img class="img" src="img/homepage_photo.png"></a>
                 <div class="header_text">
@@ -39,13 +58,14 @@
                 </div>
             </div>
 
+            <!--container for contact section-->
             <div class="contact_section section">
                 <h2 class="contact_title">Get in touch</h2>
 
                 <div class="contact_cards grid-3">
                     <div class="contact_card">
                         <div class="contact_icon">
-                            <img src="img/location-pin.svg">
+                            <img src="img/locationpin_pink.svg" alt="Location pin icon">
                         </div>
                         <div class="contact_text">
                             <h3>My location</h3>
@@ -55,7 +75,7 @@
 
                     <div class="contact_card">
                         <div class="contact_icon">
-                            <img src="img/phone.svg">
+                            <img src="img/phone_pink.svg" alt="Phone icon">
                         </div>
                         <div class="contact_text">
                             <h3>Phone number</h3>
@@ -65,7 +85,7 @@
 
                     <div class="contact_card">
                         <div class="contact_icon">
-                            <img src="img/email.svg">
+                            <img src="img/email_pink.svg" alt="Email icon">
                         </div>
                         <div class="contact_text">
                             <h3>Email address</h3>

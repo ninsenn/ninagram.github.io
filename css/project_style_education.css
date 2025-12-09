@@ -1,24 +1,22 @@
 
+.container {
+    max-width: 1400px;   /* limit on huge screens */
+    padding: 40px 15rem;
+
+}
+
+.header {
+    padding-bottom: 30px;
+}
+
+
 .card {
-    background-color: #b08d73;
-    color:antiquewhite;
+    background-color: #d2baa979;
+    border: 2px solid #b08d73;
     text-align: left;
     padding: 30px;
     border-radius:10px; /* rounding edges */
     width: 100%;
-}
-
-.container {
-    max-width: 1400px;   /* limit on huge screens */
-    margin: 20px 10rem;
-}
-
-.cta { 
-    background:#1c6e9e; 
-    color:#fff; 
-    padding:10px 16px; 
-    border-radius:12px; 
-    text-decoration: none; 
 }
 
 
@@ -58,7 +56,7 @@
     top: 0;
     bottom: calc(50% + 40px); /* half + icon radius */
     width: 2px;
-    background: #cb5308d0;
+    background: #FF5C00;
 }
 
 
@@ -67,13 +65,13 @@
     top: calc(50% + 48px); /* half + icon radius */
     bottom: 0;
     width: 2px;
-    background: #cb5308d0;
+    background: #FF5C00;
 }
 
 
 @media (max-width: 768px) {
 
-    /* Stack icon/year ABOVE the card */
+    /* Stack icon/year above the card */
     .timeline-item {
         flex-direction: column;
         align-items: center;

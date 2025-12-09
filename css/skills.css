@@ -1,13 +1,13 @@
 .header {
-    padding: 30px 7rem;
+    padding: 40px 15rem 0px 15rem;
 }
 
 
 .skills {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* makes a row of 3 */
     gap: 50px; /* space between cards */
-    padding: 5px 60px;
+    padding: 60px 15rem;
     max-width: 1200px;
     margin: auto;
     margin-bottom: 50px;
@@ -35,12 +35,6 @@
 }
 
 .skill-card h3 {
-    font-size: 22px;
-    margin: 0;
+    margin: 0; /* resets margin */
 }
 
-.skill-card p {
-    max-width: 380px;
-    color: #555;
-    line-height: 1.5;
-}

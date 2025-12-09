@@ -1,19 +1,23 @@
 
-.header {
-    padding: 2rem;
+.container {
+    max-width: 1400px;   /* limit on huge screens */
+    padding: 40px 15rem 20px 15rem;
+}
+
+div {
+    padding: 10px; /* space between sections */
 }
 
 .content_block_left {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* Places image left */
     align-items: center;
-    background-color: #f3efef; 
-;
+    background-color: #d2baa979;
 }
 
 .content_block_right {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row-reverse; /* places image right */
     align-items: center;
 }
 
@@ -23,20 +27,12 @@ img {
     border-radius: 10px;
 }
 
-div {
-    padding: 10px; 
-}
-
-main {
-    padding: 20px 10rem;
-}
-
 .button {
-    background:#8a5e3f; 
-    color:#fff; 
+    background:#452407; 
+    color:#F4D9DF; 
     padding:10px 16px; 
     border-radius:12px; 
-    text-decoration: none; 
+    text-decoration: none; /* removes underline */
 }
 
 p {

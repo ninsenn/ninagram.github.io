@@ -18,8 +18,23 @@
 
     <body>
         <header>
+            <!-- Logo link -->
             <a href="project_home.html" class="logo">Nina Gram</a>
             
+            <!-- Hidden checkbox controls menu -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+            <!-- Burger icon -->
+            <label for="menu-toggle" class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- The x for closing burger menu -->
+            <label for="menu-toggle" class="close-x">✕</label>
+
+            <!-- Main navigation links -->
             <nav>
                 <a href="project_home.html">Home</a>
                 <a href="project_education.html">Education</a>
@@ -30,13 +45,13 @@
             </nav>
         </header>
 
-        <main>
+        <main class="container">
             <div class="header">
             <h1>Project portfolio</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing eli, sed do eiusmod tempor incididunt ut labore et dolor.</p>
             </div>
 
-            <!-- IS THIS NEEDED WHEN THE IMAGE IS DEFINED? -->
+            <!-- has "left" as the styling of the sections are different-->
             <div class="content_block_left">
                 <img class="img_left" src="img/sample.jpeg">
                 <div class="content_block_content">
@@ -46,6 +61,7 @@
                 </div>
             </div>
 
+            <!-- image right styling -->
             <div class="content_block_right">
                 <img class="img_right" src="img/sample.jpeg">
                 <div class="content_block_content">

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 100 100">
+  <!-- Pink Circle -->
+  <circle cx="50" cy="50" r="48" fill="#F4D9DF"></circle>
+
+  <!-- Envelope -->
+  <rect x="28" y="36" width="44" height="28" rx="2" fill="none" stroke="#562D09" stroke-width="4"></rect>
+
+  <!-- Flap -->
+  <path d="M28 36 L50 51 L72 36" fill="none" stroke="#562D09" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>

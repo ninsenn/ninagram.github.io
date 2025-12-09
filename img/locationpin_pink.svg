@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 100 100">
+  <!-- Outer Circle (Pink) -->
+  <circle cx="50" cy="50" r="48" fill="#F4D9DF"></circle>
+
+  <!-- Location Pin (Brown Outline) -->
+  <path d="M50 18c-12 0-22 10-22 22 0 15 18 36 21 39a2 2 0 0 0 3 0c3-3 21-24 21-39 0-12-10-22-22-22z" fill="none" stroke="#562D09" stroke-width="4"></path>
+
+  <!-- Hollow Dot (Brown Ring) -->
+  <circle cx="50" cy="40" r="9" fill="none" stroke="#562D09" stroke-width="4"></circle>
+</svg>
