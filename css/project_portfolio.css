@@ -8,12 +8,31 @@ div {
     padding: 10px; /* space between sections */
 }
 
+.content_block_content {
+    padding-left: 20px;
+}
+
 .content_block_left {
     display: flex;
     flex-direction: row; /* Places image left */
     align-items: center;
-    background-color: #d2baa979;
+    position: relative;  /* allows a background layer */
+    background-color: transparent; /* remove local background */
+    z-index: 1;  /* keep content above the pseudo-element */
 }
+
+/* full-width background layer */
+.content_block_left::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* centers the 100vw element */
+    width: 100vw;  /* full browser width */
+    height: 100%; /* match height of the block */
+    background-color: #d4c7be79; 
+    z-index: -1;  /* goes behind block content */
+}
+
 
 .content_block_right {
     display: flex;
@@ -28,11 +47,17 @@ img {
 }
 
 .button {
-    background:#452407; 
+    background:#452407; /* alternating button color on purpose */
     color:#F4D9DF; 
     padding:10px 16px; 
     border-radius:12px; 
     text-decoration: none; /* removes underline */
+}
+
+.button:hover {
+    background:#F4D9DF; 
+    color:#452407;
+    border: 2px solid #FF5C00;
 }
 
 p {
